@@ -1,6 +1,4 @@
 ### Package Sorting System
-
-### Objective
 The goal of this program is to classify packages based on their dimensions and mass into three categories: STANDARD, SPECIAL, or REJECTED.
 
 ### Classification Criteria
@@ -15,21 +13,33 @@ Its mass is greater than or equal to 20 kg.
 Packages are classified into the following stacks:
 
 STANDARD: Packages that are neither bulky nor heavy.
+
 SPECIAL: Packages that are either bulky or heavy, but not both.
+
 REJECTED: Packages that are both bulky and heavy.
+
 Function Implementation
+
 `sort(width, height, length, mass)`
+
 This function sorts the package based on the provided criteria and returns the appropriate stack name.
 
 Parameters:
 width (int or float): The width of the package in centimeters.
+
 height (int or float): The height of the package in centimeters.
+
 length (int or float): The length of the package in centimeters.
+
 mass (int or float): The mass of the package in kilograms.
+
 Returns:
+`
 "STANDARD" if the package is neither bulky nor heavy.
 "SPECIAL" if the package is either bulky or heavy, but not both.
 "REJECTED" if the package is both bulky and heavy.
+`
+
 Example:
 ``` python
 sort(100, 100, 100, 15)
